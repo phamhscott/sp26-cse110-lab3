@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Meeting minutes for first meeting.">
+    <meta name="author" content="Scott Pham">
+    <title>Meeting Minutes #1</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="icons8-lol-16.png">
+</head>
+<body>
+    <header>
+        <h1>Meeting Minutes #1</h1>
+        <nav>
+            <ul>
+                <li><a href="#agenda">Agenda</a></li>
+                <li><a href="#unfinished">Unfinished Business</a></li>
+                <li><a href="#new">New Business</a></li>
+                <li><a href="#comments">Comments/Questions</a></li>
+                <li><a href="#media">Media</a></li>
+                <li><a href="#feedback-form">Feedback Form</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="details">
+            <h2>Meeting Details</h2>
+            <h3>Date: 2026-04-02</h3>
+            <b>Attendance:</b>
+            <ul>
+                <li>Scott Pham</li>
+                <li>Bob</li>
+                <li>Jane</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section id="agenda">
+            <h2>Agenda</h2>
+            <ol>
+                <li>Introductions</li>
+                <li>Review goals</li>
+                <li>Brainstorm</li>
+                <li>Assign tasks</li>
+            </ol>
+        </section>
+
+        <hr>
+
+        <section id="unfinished">
+            <h2>Unfinished Business from Last Meeting</h2>
+            <p><i>None</i>, this is the first meeting.</p>
+        </section>
+
+        <hr>
+
+        <section id="new">
+            <h2>New Business</h2>
+            <div>
+                <p>We had a welcoming and productive first meeting.  Team members introduced themselves. We started reviewing goals and the main one was that our project should be <strong>simple and focused</strong>. One goal posited was to prioritize core functionality first over nice-to-have features. <em>Everyone agreed</em> on this point.</p>
+                <p>The outline/initial brainstorming was drawn on the whiteboard. A picture is included below.</p>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="comments">
+            <h2>Comments / Questions / Concerns</h2>
+            <details>
+                <summary>Click to expand comments</summary>
+                <p><span>Jane brought up a crucial point about our intended customers.</span> We need to make sure our project easily accesible for everyone. This will be another priority.<br>Bob asked about the timeline for the project.</p>
+            </details>
+        </section>
+
+        <hr>
+
+        <section id="media">
+            <h2>Recordings, and Media</h2>
+            <h3>Whiteboard Outline and Initial Brainstorm</h3>
+            <img src="whiteboard.png" alt="Whiteboard outline and initial brainstorm" width="500">
+
+            <h3>Audio Recording of the Meeting</h3>
+            <audio controls>
+                <source src="meeting_audio.mp3" type="audio/mp3">
+            </audio>
+
+            <h3>Video Recording of the Meeting</h3>
+            <video width="400" controls>
+                <source src="meeting_video.mp4" type="video/mp4">
+            </video>
+        </section>
+
+        <hr>
+
+        <section id="form">
+            <h2>Form</h2>
+            <form>
+                <fieldset>
+                    <legend>Submit Form</legend>
+
+                    <p>
+                        <label for="name">Your Name:</label>
+                        <input type="text" id="name" name="name" list="attendees">
+                        <datalist id="attendees">
+                            <option value="Scott Pham"></option>
+                            <option value="Bob"></option>
+                            <option value="Jane"></option>
+                        </datalist>
+                    </p>
+
+                    <p>
+                        <label for="date">Date:</label>
+                        <input type="date" id="date" name="date">
+                    </p>
+
+                    <p>Was the meeting minutes helpful?</p>
+                    <input type="radio" id="helpful_yes" name="helpful" value="yes">
+                    <label for="helpful_yes">Yes</label><br>
+                    <input type="radio" id="helpful_no" name="helpful" value="no">
+                    <label for="helpful_no">No</label>
+
+                    <p>Topics for next time:</p>
+                    <input type="checkbox" id="topic_ui" name="next_topics" value="ui">
+                    <label for="topic_ui">User Interface</label><br>
+                    <input type="checkbox" id="stack" name="next_topics" value="stack">
+                    <label for="stack">Tech Stack</label><br>
+                    <input type="checkbox" id="roles" name="next_topics" value="roles">
+                    <label for="roles">Roles</label>
+
+                    <p>
+                        <label for="urgency">Urgency:</label>
+                        <select id="urgency" name="urgency">
+                            <option value="low">Low</option>
+                            <option value="medium" selected>Medium</option>
+                            <option value="high">High</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="comments">Additional Comments:</label><br>
+                        <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+                    </p>
+
+                    <button type="submit">Submit Form</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Team</p>
+    </footer>
+</body>
+</html>

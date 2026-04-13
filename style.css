@@ -16,6 +16,7 @@ html {
 
 /* css variables */
 :root {
+  --primary-color: #2E7599; /* fallback */
   --primary-color: color(display-p3 0.18 0.46 0.6); /* color() */
   --secondary-color: #f4f4f4;
   --text-color: #333;
@@ -174,7 +175,7 @@ nav {
   display: grid; /* grid */
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* grid a1 */
   gap: 2rem; /* grid a2 */
-  align-items: top; /* grid a3 */
+  align-items: start; /* grid a3 */
 }
 
 /* selector list */

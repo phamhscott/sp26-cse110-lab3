@@ -6,6 +6,18 @@
     <meta name="author" content="Scott Pham">
     <title>Meeting Minutes #1</title>
     <link rel="icon" type="image/png" sizes="16x16" href="icons8-lol-16.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Internal CSS example */
+        details {
+            border: 1px solid #aaa;
+            border-radius: 4px;
+            padding: .5em .5em 0;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -25,7 +37,7 @@
     <main>
         <section id="details">
             <h2>Meeting Details</h2>
-            <h3>Topic: First Project Meeting</h3>
+            <h3 style="color: navy;">Topic: First Project Meeting</h3> /* Inline CSS example */
             <h3>Date: 2026-04-02</h3>
             <b>Attendance:</b>
             <ul>
@@ -34,8 +46,6 @@
                 <li>Jane</li>
             </ul>
         </section>
-
-        <hr>
 
         <section id="agenda">
             <h2>Agenda</h2>
@@ -47,14 +57,10 @@
             </ol>
         </section>
 
-        <hr>
-
         <section id="unfinished">
             <h2>Unfinished Stuff From Last Meeting</h2>
             <p><i>None</i>, this is the first meeting.</p>
         </section>
-
-        <hr>
 
         <section id="new">
             <h2>New Stuff</h2>
@@ -64,8 +70,6 @@
             </div>
         </section>
 
-        <hr>
-
         <section id="comments">
             <h2>Comments / Questions / Concerns</h2>
             <details>
@@ -74,25 +78,27 @@
             </details>
         </section>
 
-        <hr>
-
         <section id="media">
-            <h2>Recordings, and Media</h2>
-            <h3>Whiteboard Outline and Initial Brainstorm</h3>
-            <img src="whiteboard.png" alt="Whiteboard outline and initial brainstorm" width="500">
-
-            <h3>Audio Recording of the Meeting</h3>
-            <audio controls>
-                <source src="meeting_audio.mp3" type="audio/mp3">
-            </audio>
-
-            <h3>Video Recording of the Meeting</h3>
-            <video width="400" controls>
-                <source src="meeting_video.mp4" type="video/mp4">
-            </video>
+            <h2>Recordings and Media</h2>
+            <div class="media-container">
+                <div>
+                    <h3>Whiteboard Outline and Initial Brainstorm</h3>
+                    <img src="whiteboard.png" alt="Whiteboard outline and initial brainstorm" width="500">
+                </div>
+                <div>
+                    <h3>Video Recording of the Meeting</h3>
+                    <video width="400" controls>
+                        <source src="meeting_video.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div>
+                    <h3>Audio Recording of the Meeting</h3>
+                    <audio controls>
+                        <source src="meeting_audio.mp3" type="audio/mp3">
+                    </audio>
+                </div>
+            </div>
         </section>
-
-        <hr>
 
         <section id="form">
             <h2>Form</h2>
@@ -146,7 +152,9 @@
                     <button type="submit">Submit Form</button>
                 </fieldset>
             </form>
+
         </section>
+        <hr>
     </main>
 
     <footer>

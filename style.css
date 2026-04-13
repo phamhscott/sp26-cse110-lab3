@@ -213,7 +213,7 @@ footer {
   text-align: center;
   padding: 20px;
   margin-top: 20px; /* long */
-  background-color: color-mix(in srgb, var(--primary-color) 25%, #333);  /* color mix */
+  background-color: color-mix(in srgb, rgb(46, 117, 153) 25%, #333);  /* color mix */
   color: white;
 }
 

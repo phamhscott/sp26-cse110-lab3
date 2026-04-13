@@ -17,7 +17,7 @@ html {
 /* css variables */
 :root {
   --primary-color: #2E7599; /* fallback */
-  --primary-color: color(display-p3 0.18 0.46 0.6); /* color() */
+  --primary-color: color(srgb 0.18 0.46 0.6); /* color() */
   --secondary-color: #f4f4f4;
   --text-color: #333;
   --border-color: hsl(0, 0%, 80%);
